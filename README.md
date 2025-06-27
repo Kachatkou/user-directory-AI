@@ -2,8 +2,6 @@
 
 A responsive React application that displays and manages user data from an external API. The application provides a professional user interface with a table-like layout and modal interaction for user details.
 
-![User Directory Screenshot](https://via.placeholder.com/800x400?text=User+Directory+Screenshot)
-
 ## Features
 
 - **User List Display**
