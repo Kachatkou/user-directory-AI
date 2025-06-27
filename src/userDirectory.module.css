@@ -1,0 +1,120 @@
+.directoryContainer {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.tableWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.tableHeader {
+  display: flex;
+  background: #f5f6fa;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+.headerCell {
+  flex: 1;
+  padding: 16px 12px;
+  text-align: left;
+  font-size: 1rem;
+  color: #222;
+}
+.tableRow {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  transition: background 0.2s;
+  background: #fff;
+}
+.tableRow:hover {
+  background: #f0f4ff;
+}
+.cell {
+  flex: 1;
+  padding: 14px 12px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.cell:last-child {
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+.name {
+  font-weight: 500;
+  color: #1a237e;
+}
+.email {
+  font-size: 0.92rem;
+  color: #607d8b;
+}
+.websiteLink {
+  color: #1976d2;
+  text-decoration: underline;
+  font-size: 0.98rem;
+}
+.deleteButton {
+  background: none;
+  border: none;
+  color: #e53935;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.deleteButton:hover {
+  background: #ffeaea;
+}
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #607d8b;
+  margin: 40px 0;
+}
+@media (max-width: 800px) {
+  .directoryContainer {
+    padding: 8px;
+  }
+  .headerCell,
+  .cell {
+    padding: 10px 6px;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  .tableHeader,
+  .tableRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headerCell,
+  .cell {
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 0.92rem;
+  }
+  .cell:last-child {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
